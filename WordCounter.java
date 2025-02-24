@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class WordCounter {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+        
+        String[] words = sentence.split("\\s+");
+        
+        System.out.println("The sentence has " + words.length + " words.");
+        
+        scanner.close();
+    }
+}
